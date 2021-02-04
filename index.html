@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" href="./css/main.css">
+		<title>Accordion Design Test</title>
+</head>
+<body style="margin: 0; padding: 50px 0px;">
+	
+			<div class="image">
+				<!--image of beau in the corner-->
+				<!--play around with adding a sourceset tag to target different screens and resolutions-->
+				<img src="./img/beau_cornered.jpeg" alt="an odd man standing in the corner of an elevator" width="100%" height="auto">
+			</div>			
+
+			<div class="content">
+				<div class="section">
+				<h1>Accordion with symbols</h1>
+				<p>In this example, there seems to be a need to explain why Beau is standing in the corner of the elevator.</p>
+				</div>
+
+				<!--Working to add white space between the bottom of the panel and the start of the next accordion-->	
+				<!--add a copy to clipbaord cta-->	
+
+				<button class="accordion">Reason 1</button>
+					<div class="panel">
+					<p id="snippetCopy1">Someone made a really cheezy joke, so he is hanging his head in shame.
+						<div>
+							</p>
+							<!--Add this code and js at a later time when the function can be fix 
+								<button onclick="copyToClipboard('#snippetCopy')">
+							<span>Copy to clipboard</span>
+						  Copy text
+						  </button> 
+						-->
+						</div>
+					</div>
+					
+					<button class="accordion">Reason 2</button>
+					<div class="panel">
+					<p id="snippetCopy2">His elevator riding partner farted so he is searching for the last of the fresh air.</p>
+					</div>
+					
+					<button class="accordion">Reason 3</button>
+					<div class="panel">
+					<p id="snippetCopy3">The floor stickers came loose so he had Brian take a picture of how rediculous it might look if he stood in the corner.</p>
+					</div>
+			</div>
+			<script src="./javascript/copyCopy.js"></script>
+			<script src="./javascript/mainJava.js"></script>		
+</body>
+</html>
+
