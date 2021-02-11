@@ -110,3 +110,25 @@
     visibility: visible;
     opacity: 1;
   }
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+  body {
+    color: #eee;
+    background: #121211;
+  }
+  .accordion {
+    color: #f8f8f8;
+    background-color: #555;
+  }
+  .panel {
+    background-color: transparent;
+  }
+  .accordion:hover {
+    color: #121212;
+  }
+  /* Created a new color for active, not too fond of it, but I wanted to show the state change. */
+  .active {
+    color: #c4c4c4;
+  }
+}
