@@ -1,115 +1,82 @@
-  html {
-    font-family: "Lucida Sans", sans-serif;
-  }
-  h1 {
-    font-weight: 300;
-    font-size: 2rem;
-    margin: 0px 0px 0px 0px;
-  }
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+  
+h1 {
+  font-weight: 300;
+  font-size: 2rem;
+  margin: 0px 0px 0px 0px;
+}
 
-  p {
-    font-weight: 100;
-    font-size: .75rem;
-    
-    line-height: 1.2rem;
-    margin: 10px 0px 10px 0px;
-  }
+p {
+  font-weight: 100;
+  font-size: .75rem;
+  line-height: 1.2rem;
+  margin: .625rem 0 .625rem 0; /* 10 / 16 */
+}
 
-  .image {
-    max-width: 400px;
-    float: left;
-    margin: 0px 20px 24px 20px;
+.image {
+  max-width: 400px;
+  float: left;
+  margin: 0 1.25rem 1.5rem 1.25rem; /* 20 / 16 & 24 / 16 */
+}
 
-  }
-  .content {
-    
-    max-width: 400px;
-    float: left;
-    margin: 0px 20px 0px 20px;
-  }
-  .section {
-    margin: 0px 20px 30px 20px;
-  }
+.content {  
+  max-width: 400px;
+  float: left;
+  margin: 0 1.25rem 0 1.25rem; /* 20 /16 */
+}
 
-  .accordion {
-    background-color: #f8f8f8;
-    color: #555;
-    cursor: pointer;
-    border-radius: 5px 5px 0px 0px;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: .9em;
-    transition: 0.4s;
-  }
+.section {
+  margin: 0 1.25rem 1.875rem 1.25rem; /* 20 / 16 & 30 / 16 */
+}
+
+.accordion {
+  background-color: #f8f8f8;
+  color: #555;
+  cursor: pointer;
+  border-radius: .25rem .25rem 0 0; /* The oringal was 5px, I reduced it for ease of calcuation & looks */
+  padding: 1.125rem; /* 18 / 16 */
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: .9em;
+  transition: 0.4s;
+}
   
-  .active, .accordion:hover {
-    background-color: #ebebeb;
-  }
+.active, .accordion:hover {
+  background-color: #ebebeb;
+}
   
-  .accordion:after {
-    content: '\002B';
-    color: #777;
-    font-weight: bold;
-    float: right;
-    margin-left: 0px;
-  }
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 0;
+}
   
-  .active:after {
-    content: "\2212";
-  }
+.active:after {
+  content: "\2212";
+}
   
-  .panel {
-    padding: 0 18px;
-    margin: 0px 0px -4px 0px;
-    background-color: #fcfcfc;
-    border-radius: 0px 0px 5px 5px;
-    font-weight: 100;
-    max-width: 400px;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-  }
+.panel {
+  padding: 0 1.125rem; /* 18/ 16 */
+  margin: 0px 0px -4px 0px;
+  background-color: #fcfcfc;
+  border-radius: 0 0 .25rem .25rem; /* Inverse of the .accordion property, adjusted here too. */
+  font-weight: 100;
+  max-width: 25rem; /* 400 / 16 */
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
   
-  .tooltip {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .tooltip .tooltiptext {
-    visibility: hidden;
-    width: 140px;
-    background-color: #555;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px;
-    position: absolute;
-    z-index: 1;
-    bottom: 150%;
-    left: 50%;
-    margin-left: -75px;
-    opacity: 0;
-    transition: opacity 0.3s;
-  }
-  
-  .tooltip .tooltiptext::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
-  }
-  
-  .tooltip:hover .tooltiptext {
-    visibility: visible;
-    opacity: 1;
-  }
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
 
 /* Dark Mode */
 @media (prefers-color-scheme: dark) {
